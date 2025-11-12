@@ -11,8 +11,8 @@ qui liront et écriront des fichiers PGM
 #include <string>
 using namespace std;
 
-#include "image.h"
-#include "chargesauve.h"
+#include "../includes/image.h"
+#include "../includes/chargesauve.h"
 
 /*
 Action ChargeImage(NomImage,Image,Ok)
