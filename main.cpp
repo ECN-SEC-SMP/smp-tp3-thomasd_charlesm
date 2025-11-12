@@ -8,11 +8,12 @@ using namespace std;
 
 int main()
 {
-  string imgPath;
+  string chemin = "images/";
   int seuil;
-  cout << "Indiquer le chemin d'accès relatif" << endl;
-  cin >> imgPath;
-  cout << "Indiquer le seuil de comparaison" << endl;
-  cin >> seuil;
-  seuillage(imgPath, seuil);
+  cout << "Indiquer la première image" << endl;
+  string img1 = cheminImage();
+  cout << "Indiquer la seconde image" << endl;
+  string img2 = cheminImage();
+  difference(img1, img2);
+  return 0;
 }
