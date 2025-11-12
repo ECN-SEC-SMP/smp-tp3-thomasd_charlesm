@@ -11,5 +11,6 @@ struct t_Structurant // question 2
   int w; // largeur élement structurant
   int h; // hauteur élément structurant
   int centreW;
-  int centreH; // coordonées centre
+  int centreH;    // coordonées centre
+  t_MatEnt forme; // forme
 };
