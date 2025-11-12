@@ -18,7 +18,7 @@ But : charge, dans la variable Image, l'image donnée au format PGM
 dans le fichier NomImage. Le booléen Ok indique si le chargement
 s'est effectué normalement.
 */
-void loadPgm(string NomImage, t_Image * Image, bool & Ok);
+void loadPgm(std::string NomImage, t_Image * Image, bool & Ok);
 
 /*
 Action SauveImage(NomImage, Image)
@@ -28,7 +28,7 @@ pour éviter de doubler cette place mémoire pendant l'exécution de l'action.
 But : enregistre au format PGM, dans le fichier NomImage, l'image représentée
 dans la variable Image.
 */
-void savePgm(string NomImage, t_Image * Image);
+void savePgm(std::string NomImage, t_Image * Image);
 
 #endif
 

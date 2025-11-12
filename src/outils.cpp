@@ -26,7 +26,8 @@ void seuillage(string Image, int seuil)
 
 void difference(string img1, string img2)
 {
-  t_Image *Image1, *Image2 = new t_Image;
+  t_Image *Image1 = new t_Image;
+  t_Image *Image2 = new t_Image;
   bool statut1, statut2;
   loadPgm(img1, Image1, statut1);
   loadPgm(img2, Image2, statut2);
@@ -40,5 +41,6 @@ void difference(string img1, string img2)
     }
   }
   savePgm("difference.pgm", Image2);
-  delete Image1, Image2;
+  delete Image1;
+  delete Image2;
 }
